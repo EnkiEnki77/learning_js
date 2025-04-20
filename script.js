@@ -107,3 +107,10 @@ let result = myMap([1, 2, 3], (num) => num * 2)
 
 // functions in JS are really first-class objects, meaning they have a lot of the same properties as objects.
 // They can be passed around as arguments, returned from other functions, and assigned to variables/object properties.
+
+// Functions stored as properties of objects are called methods.
+
+
+// Any function that takes a function as input or returns a function as output is called a higher-order function.
+
+// Any function that is passed as an argument to another function is called a callback function.
