@@ -45,6 +45,16 @@ function copyArrayAndMultiplyByTwo(arr) {
     return output;
 }
 
+// Very similar functionality, but instead of multiplying by 2 we want to divide by 2. But because functionality was all hardcoded
+// we still need a whole new function. 
+function copyArrayAndDivideByTwo(arr) {
+    let output = []
+    for (let i = 0; i < arr.length; i++) {
+        output.push(arr[i] / 2);
+    }
+    return output;
+}
+
 
 // We could instead use a higher order function, which takes a function as an argument. Allowing us to generalize the part
 // of the funcitonality we might want to change while keeping the rest that will always be the same static. 
@@ -83,3 +93,17 @@ function myForEach(arr, func){
         func(arr[i], i, arr);
     }
 }
+
+// when a variable is assigned the invocation of a function its value in memory is undefined until the function returns a value.
+let result = myMap([1, 2, 3], (num) => num * 2)
+
+
+// The environment in which the thread executes code line by line and stores data in memory is called the execution context.
+
+
+// We know the execution context should be popped off the stack when the return is hit in the function. Either implicitly or
+// explicitly.  
+
+
+// functions in JS are really first-class objects, meaning they have a lot of the same properties as objects.
+// They can be passed around as arguments, returned from other functions, and assigned to variables/object properties.
