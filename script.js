@@ -114,3 +114,16 @@ let result = myMap([1, 2, 3], (num) => num * 2)
 // Any function that takes a function as input or returns a function as output is called a higher-order function.
 
 // Any function that is passed as an argument to another function is called a callback function.
+
+
+// Callbacks and higher order functions allow us to keep our code more DRY, they also allow us to run async code.
+
+
+
+// Callbacks are functions that satisfy two conditions:
+// 1. They are passed as an argument to another function.
+// 2. They are invoked inside that function.
+
+// Higher order functions are functions that satisfy at least one of two conditions:
+// 1. They take a function as an argument.
+// 2. They return a function as their result.
